@@ -2,15 +2,15 @@ const express = require("express");
 const bodyParser = require("body-parser");
 
 const app = express();
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 
-app.get("/", function(req, res) {
+app.get("/", function (req, res) {
     res.sendFile(__dirname + "/addCalculator.html");
 });
 
 
-app.post("/", function(req, res) {
+app.post("/", function (req, res) {
     console.log(req.body);
 
     var num1 = Number(req.body.num1);
@@ -21,12 +21,12 @@ app.post("/", function(req, res) {
 });
 
 
-app.get("/bmiCalculator", function(req, res) {
+app.get("/bmiCalculator", function (req, res) {
     res.sendFile(__dirname + "/bmiCalculator.html")
 });
 
 
-app.post("/bmiCalculator", function(req, res) {
+app.post("/bmiCalculator", function (req, res) {
     console.log(req.body);
 
     var weight = parseFloat(req.body.weight);
@@ -37,6 +37,6 @@ app.post("/bmiCalculator", function(req, res) {
 });
 
 
-app.listen(3000, function() {
+app.listen(3000, function () {
     console.log("Server is running on port 3000.");
 });
