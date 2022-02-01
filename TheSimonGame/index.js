@@ -65,6 +65,7 @@ function gameRestartFun() {
 }
 
 
+
 $(".bttn").click(function() {
     var colorName = this.id;
     clickPattern.push(colorName);
