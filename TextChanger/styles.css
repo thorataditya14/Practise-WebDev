@@ -1,0 +1,13 @@
+#changeUserText {
+    width: 200px;
+    height: 30px;
+    margin: 0;
+}
+
+#changeUserColor {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
+}
