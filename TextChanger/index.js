@@ -4,5 +4,7 @@ function changeTheText() {
     document.getElementById("paragraphText").style.color = changeTextColor;
 
     var changeTextVariable = document.getElementById("changeUserText").value;
+ 
+ 
     document.getElementById("paragraphText").innerHTML = changeTextVariable;
 }
