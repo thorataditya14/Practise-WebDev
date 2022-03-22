@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+    margin: 50px auto 100px;
+}
+
+div {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+#btnl, #btnr {
+    padding: 10px;
+    border-radius: 30px;
+    background-color: lime;
+}
+
+.btn1, .btn2 {
+    position: absolute;
+    top: 55%;
+}
+
+.btn1 {
+    left: 390px;
+}
+
+.btn2 {
+    right: 390px;
+}
